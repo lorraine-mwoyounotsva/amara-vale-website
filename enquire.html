@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Enquire | Amara Vale Wedding Photography</title>
+<meta name="description" content="Check availability and enquire about wedding photography with Amara Vale.">
+<meta name="theme-color" content="#FAF6F0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Average+Sans&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="Amara Vale Photography, home"><b>Amara Vale</b><small>Wedding Photography</small></a>
+    <nav class="nav" aria-label="Main"><a class="pill" href="galleries.html">Galleries</a><a class="pill" href="packages.html">Packages</a><a class="pill" href="about.html">About</a><a class="pill" href="enquire.html" aria-current="page">Enquire</a></nav>
+    <button class="pill menu-btn" type="button" aria-expanded="false" aria-controls="mobile-nav">Menu</button>
+  </div>
+</header>
+<div class="mobile-nav" id="mobile-nav" aria-label="Menu">
+  <div class="mn-top"><a class="brand" href="index.html"><b>Amara Vale</b><small>Wedding Photography</small></a><button class="pill mn-close" type="button">Close</button></div>
+  <ul><li><a href="index.html">Home</a></li><li><a href="galleries.html">Galleries</a></li><li><a href="packages.html">Packages</a></li><li><a href="about.html">About</a></li><li><a href="enquire.html" aria-current="page">Enquire</a></li></ul>
+  <div class="mn-foot"><p>hello@amaravale.photo<br>+27 21 555 0142</p></div>
+</div>
+<main id="main">
+
+<section class="page-head">
+  <div class="wrap page-head-grid">
+    <div><span class="eyebrow">Enquire</span><h1 class="display">Tell me about your day</h1></div>
+    <p class="lead">Fill in what you know so far. Nothing is set in stone and there are no wrong answers.</p>
+  </div>
+</section>
+<section class="section--tight" style="padding-top:0">
+  <div class="wrap enquire">
+    <div>
+      <form id="enquiry-form" novalidate>
+        <div class="form-grid">
+          <div class="field" data-field="names"><label for="names">Your names</label><input id="names" name="names" autocomplete="name" placeholder="Lena and Tobias" required><span class="err" role="alert"></span></div>
+          <div class="field" data-field="email"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required><span class="err" role="alert"></span></div>
+          <div class="field"><label for="phone">Phone (optional)</label><input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="Include your country code"></div>
+          <div class="field" data-field="date">
+            <span class="label" id="date-label">Wedding date</span>
+            <div data-datepicker style="position:relative">
+              <div class="date-row">
+                <input id="date-display" readonly placeholder="Choose a date" aria-labelledby="date-label" aria-haspopup="dialog">
+                <button type="button" class="pill dp-toggle" aria-expanded="false" aria-controls="dp-panel">Calendar</button>
+              </div>
+              <input type="hidden" id="wedding-date" name="wedding_date">
+              <div class="dp" id="dp-panel" role="dialog" aria-label="Choose your wedding date">
+                <div class="dp-head"><button type="button" class="dp-nav" data-dp="prev">Prev</button><span class="dp-title" aria-live="polite"></span><button type="button" class="dp-nav" data-dp="next">Next</button></div>
+                <div class="dp-grid"></div>
+                <div class="dp-legend"><span><i class="l-sel"></i>Selected</span><span><i class="l-book"></i>Struck through means booked</span></div>
+                <div class="dp-status" aria-live="polite"></div>
+              </div>
+            </div>
+            <label class="flex-check"><input type="checkbox" id="flexible" name="flexible"> We have not set a date yet</label>
+            <span class="err" role="alert"></span>
+          </div>
+          <div class="field" data-field="location"><label for="location">Venue or location</label><input id="location" name="location" placeholder="Venue, town or country" required><span class="err" role="alert"></span></div>
+          <div class="field"><label for="guests">Guest count</label><select id="guests" name="guests"><option value="">Not sure yet</option><option>Up to 30</option><option>30 to 80</option><option>80 to 150</option><option>150 to 250</option><option>More than 250</option></select></div>
+          <div class="field field--full" data-field="collection"><label for="collection">Collection</label>
+            <select id="collection" name="collection" required><option value="">Choose one</option><option value="The Elopement">The Elopement, $2,400</option><option value="The Day">The Day, $4,200</option><option value="The Full Story">The Full Story, $6,500</option><option value="Not sure yet">Not sure yet, help me choose</option></select><span class="err" role="alert"></span></div>
+          <div class="field field--full" data-field="message"><label for="message">Tell me about your plans</label><textarea id="message" name="message" placeholder="The vibe, the people, anything you are excited or nervous about"></textarea><span class="err" role="alert"></span></div>
+          <div class="field field--full"><label for="heard">How did you find me? (optional)</label><input id="heard" name="heard" placeholder="Instagram, a friend, your venue"></div>
+        </div>
+        <div style="display:flex;align-items:center;gap:20px;flex-wrap:wrap;margin-top:34px">
+          <button class="pill pill--dark pill--lg" type="submit">Send enquiry</button>
+          <span class="hint">I reply within two working days.</span>
+        </div>
+      </form>
+      <div class="thanks" id="thanks" tabindex="-1" aria-live="polite">
+        <span class="eyebrow">Enquiry received</span>
+        <h2 class="h2">Thank you, <span data-first></span></h2>
+        <p>I will check my calendar and reply within two working days. Here is what you sent:</p>
+        <dl></dl>
+      </div>
+    </div>
+    <aside class="aside-card" aria-label="Contact details">
+      <img src="assets/img/barrel-florals-1600.webp" srcset="assets/img/barrel-florals-800.webp 800w, assets/img/barrel-florals-1600.webp 1600w, assets/img/barrel-florals-2400.webp 2400w" sizes="(max-width:900px) 100vw, 30vw" width="1066" height="1600" alt="Wine barrel with red and pink florals at a garden reception" loading="lazy" decoding="async">
+      <dl>
+        <dt>Email</dt><dd>hello@amaravale.photo</dd>
+        <dt>Phone and WhatsApp</dt><dd>+27 21 555 0142</dd>
+        <dt>Studio, by appointment</dt><dd>Studio 3, 41 Shortmarket Street<br>Cape Town 8001, South Africa</dd>
+        <dt>Now booking</dt><dd>2027 and 2028 seasons worldwide</dd>
+      </dl>
+    </aside>
+  </div>
+</section>
+<script>
+(function(){var m=/[?&]collection=([^&]+)/.exec(location.search);if(!m)return;var map={'elopement':'The Elopement','the-day':'The Day','full-story':'The Full Story'};var s=document.getElementById('collection');if(s&&map[m[1]])s.value=map[m[1]];})();
+</script>
+
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <h2 class="display">Let's make it yours</h2>
+      <a class="pill pill--lg" href="enquire.html">Let's connect</a>
+    </div>
+    <div class="foot-cols">
+      <div><h4>Studio</h4><p>Amara Vale Photography<br>Studio 3, 41 Shortmarket Street<br>Cape Town 8001, South Africa</p></div>
+      <div><h4>Say hello</h4><p><a href="mailto:hello@amaravale.photo">hello@amaravale.photo</a><br><a href="tel:+27215550142">+27 21 555 0142</a></p><p>Replies within two working days</p></div>
+      <div><h4>Explore</h4><ul><li><a href="galleries.html">Galleries</a></li><li><a href="packages.html">Packages</a></li><li><a href="about.html">About</a></li><li><a href="enquire.html">Enquire</a></li></ul></div>
+      <div><h4>Follow</h4><ul><li><a href="https://instagram.com">Instagram</a></li><li><a href="https://pinterest.com">Pinterest</a></li><li><a href="https://vimeo.com">Vimeo</a></li></ul></div>
+    </div>
+    <div class="foot-base"><span>&copy; <span data-year>2026</span> Amara Vale Photography. All rights reserved.</span><span>Based in Cape Town, available worldwide</span></div>
+  </div>
+</footer>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

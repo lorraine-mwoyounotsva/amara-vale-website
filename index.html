@@ -13,7 +13,7 @@
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
-<header class="site-header">
+<header class="site-header site-header--overlay">
   <div class="wrap">
     <a class="brand" href="index.html" aria-label="Amara Vale Photography, home"><b>Amara Vale</b><small>Wedding Photography</small></a>
     <nav class="nav" aria-label="Main"><a class="pill" href="galleries.html">Galleries</a><a class="pill" href="packages.html">Packages</a><a class="pill" href="about.html">About</a><a class="pill pill--fill" href="enquire.html">Enquire</a></nav>
@@ -28,26 +28,22 @@
 <main id="main">
 
 <section class="hero" aria-label="Introduction">
-  <div class="wrap">
-    <div class="hero-stage">
-      <h1 class="sr-only">Amara Vale, wedding photographer</h1>
-      <p class="hero-word hero-word--l" aria-hidden="true">Amara</p>
-      <div class="hero-frame">
-        <video data-autoplay autoplay muted loop playsinline preload="auto" poster="assets/video/hero_poster.webp" aria-label="Blossom covered ballroom set for a wedding reception">
-          <source src="assets/video/hero-sm.mp4" type="video/mp4" media="(max-width: 760px)">
+  <video class="hero-video" data-autoplay autoplay muted loop playsinline preload="auto" poster="assets/video/hero_poster.webp" aria-hidden="true">
+    <source src="assets/video/hero-sm.mp4" type="video/mp4" media="(max-width: 760px)">
     <source src="assets/video/hero.mp4" type="video/mp4">
-        </video>
-      </div>
-      <p class="hero-word hero-word--r" aria-hidden="true">Vale</p>
-      <span class="hero-sub">Wedding photographer</span>
-    </div>
-    <div class="hero-meta">
+  </video>
+  <div class="hero-shade" aria-hidden="true"></div>
+  <div class="wrap hero-content">
+    <span class="eyebrow hero-kicker">Wedding photographer, Cape Town and worldwide</span>
+    <h1 class="hero-title"><span>Amara</span> <span>Vale</span></h1>
+    <div class="hero-bottom">
       <p class="lead">Honest, unhurried photographs of your wedding day. Based in Cape Town and happy to travel wherever you are saying yes.</p>
-      <div style="display:flex;flex-direction:column;align-items:flex-start;gap:16px">
-        <span class="hero-note"><svg viewBox="0 0 54 40" fill="none" stroke="#222" stroke-width="1.2" stroke-linecap="round" aria-hidden="true"><path d="M50 4C40 4 30 10 26 20s-12 14-20 14"/><path d="M11 29l-5 5 7 2"/></svg>scroll to see more</span>
-        <a class="pill pill--dark pill--lg" href="enquire.html">Check your date</a>
+      <div class="hero-actions">
+        <a class="pill pill--light pill--lg" href="enquire.html">Check your date</a>
+        <a class="pill pill--lg" href="galleries.html">View galleries</a>
       </div>
     </div>
+    <span class="hero-note"><svg viewBox="0 0 54 40" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" aria-hidden="true"><path d="M50 4C40 4 30 10 26 20s-12 14-20 14"/><path d="M11 29l-5 5 7 2"/></svg>scroll to see more</span>
   </div>
 </section>
 
